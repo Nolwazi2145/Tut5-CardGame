@@ -51,12 +51,34 @@ void DeckOfCards::shuffle()
 
 }
 
+
+Card DeckOfCards::peek()
+{
+	return *Cards[cards - 1];
+}
+
+Card DeckOfCards::draw()
+{
+	Card temp = peek();
+	delete Cards[cards - 1];
+	--cards;
+	return temp;
+}
+
+
+int DeckOfCards::numberOfCards()
+{
+	return cards;
+}
+
 void DeckOfCards::Switch(Card *c1, Card *c2)
 {
 	Card Hold = *c1;
 	*c1 = *c2;
 	*c2 = Hold;
 }
+
+
 //frees up memory allocataed to the array of pointers
 void DeckOfCards::free()
 {

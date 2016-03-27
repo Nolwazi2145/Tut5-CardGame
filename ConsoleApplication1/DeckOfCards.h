@@ -10,6 +10,9 @@ public:
 	DeckOfCards();
 	vector <Card*> reset();
 	void shuffle();
+	Card peek();
+	Card draw();
+	int numberOfCards();
 	~DeckOfCards();
 
 private:
