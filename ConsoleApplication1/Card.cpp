@@ -29,7 +29,7 @@ string Card::colour()
 
 void Card::print()
 {
-	cout <<(*this).colour() << " " <<(*this).number() << endl;
+	cout <<colour() << " " <<number() << endl;
 
 }
 Card::~Card()
