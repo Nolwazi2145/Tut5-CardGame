@@ -2,20 +2,19 @@
 #define Card_H
 #include <iostream>
 #include <string>
+
 using namespace std;
 class Card
 {
 private:
-	int Num;
-	int Number;
-	string Coloor;
-	string Colour;
+	int Number = NULL;
+	string Colour ="No card";
 public:
-	Card();
+	Card(int, string);
 	~Card();
-	string getColour();
-	int getNumber();
-	void DisplayCard();
+	string colour();
+	int number();
+	void print();
 
 };
 #endif

@@ -5,6 +5,6 @@ using namespace std;
 
 int main()
 {
-	Card myCard;
-	myCard.DisplayCard();
+	Card myCard(1,"red");
+	myCard.print();
 };

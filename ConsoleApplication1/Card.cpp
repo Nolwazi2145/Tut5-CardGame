@@ -4,35 +4,35 @@
 using namespace std;
 
 
-Card::Card()
+//default constructor
+Card::Card(int num, string color)
 {
-	string Colour;
-	int Number;
-	for (Num = 1; Num <= 10; Num++)
+	if ((num > 0 && num <= 10) && (color == "red" || color == "black"))
 	{
-		Number = Num;
-	}
-	if (Coloor == "red" || Coloor == "black")
-	{
-		Colour = Coloor;
+		Number = num;
+		Colour = color;
 	}
 	else
-	{
-		cout << "invalid card" << endl;
-	}
+		cout << "invalid thing" << endl;
 }
-Card::~Card()
-{
-}
-string Card::getColour()
-{
-	return Colour;
-}
-int Card::getNumber()
+
+
+int Card::number()
 {
 	return Number;
 }
-void DisplayCard()
+
+string Card::colour()
 {
-	cout << "Colour number" << endl;
-};
+	return Colour;
+}
+
+void Card::print()
+{
+	cout <<(*this).colour() << " " <<(*this).number() << endl;
+
+}
+Card::~Card()
+{
+
+}
