@@ -5,12 +5,17 @@
 using namespace std;
 class Card
 {
+private:
+	int Num;
+	int Number;
+	string Coloor;
+	string Colour;
 public:
 	Card();
 	~Card();
 	string getColour();
 	int getNumber();
-		void printCard();
+	void DisplayCard();
 
 };
 #endif
