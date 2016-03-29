@@ -5,6 +5,10 @@ using namespace std;
 
 
 //default constructor
+Card::Card()
+{
+
+}
 Card::Card(int num, string color)
 {
 	if ((num > 0 && num <= 10) && (color == "red" || color == "black"))
@@ -29,7 +33,7 @@ string Card::colour()
 
 void Card::print()
 {
-	cout <<colour() << " " <<number() << endl;
+	cout <<colour() << " " <<number() ;
 
 }
 Card::~Card()
