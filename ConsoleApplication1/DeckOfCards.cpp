@@ -11,7 +11,7 @@ DeckOfCards::DeckOfCards()
 vector <Card*> DeckOfCards::reset()
 {
 	int i;
-	int CardIndex = 0; //stores the card number to be stored
+	int CardIndex = 0; //stores the card number to be  stored
 	free();
 	cards = 20;
 	for (i = 0; i < 20; ++i)
